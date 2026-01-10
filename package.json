@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +18,12 @@
     "jest": "^30.2.0",
     "ts-jest": "^29.4.6",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "jest-html-reporter": "^4.3.0"
+  },
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src"
   }
 }
