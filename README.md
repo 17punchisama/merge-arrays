@@ -69,3 +69,80 @@ merge(
 ```
 
 ---
+
+## ❗ Error Examples
+### collection_1 is not ascending
+```ts
+merge([3, 1, 4], [2, 5], [7, 6]);
+```
+
+Error:
+```csharp
+Error: collection_1 is not sorted ascending.
+```
+### collection_2 is not ascending
+```ts
+merge([1, 3], [5, 4], [7, 6]);
+```
+
+Error:
+```csharp
+Error: collection_2 is not sorted ascending.
+```
+
+### collection_3 is not descending
+```ts
+merge([1, 3], [2, 5], [7, 4, 6]);
+```
+
+Error:
+```csharp
+Error: collection_3 is not sorted descending.
+```
+---
+
+## 🧪 Test Coverage
+
+This project includes unit tests for:
+
+- Normal merge operations
+- Empty arrays
+- Single-array scenarios
+- Negative number handling
+- Duplicate values
+- Input validation (ascending/descending checks)
+- `isAscending()` helper function
+- `isDescending()` helper function
+
+Example output:
+```csharp
+ PASS  test/merge.test.ts
+  merge
+    ✓ merge normal case
+    ✓ collection_1 is not ascending
+    ✓ collection_2 is not ascending
+    ✓ collection_3 is not descending
+    ✓ empty arrays
+```
+
+---
+
+## 📄 Optional HTML Test Report
+Enable in `jest.config.js`:
+```js
+reporters: [
+  "default",
+  [
+    "jest-html-reporter",
+    {
+      pageTitle: "Merge Test Report",
+      outputPath: "report.html",
+      includeConsoleLog: true
+    }
+  ]
+]
+```
+
+A `report.html` file will appear with:
+- Test result summary
+- Timing information
