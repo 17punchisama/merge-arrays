@@ -22,3 +22,9 @@ Clone this repository:
 ```bash
 git clone https://github.com/17punchisama/merge-arrays.git
 cd merge-arrays
+```
+
+Install dependencies:
+```bash
+npm install
+```
