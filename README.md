@@ -33,6 +33,18 @@ Run all tests:
 ```bash
 npm test
 ```
+
+## 🐳 Run with Docker (Optional)
+Build the image:
+
+```bash
+docker build -t merge-arrays .
+```
+
+Run tests inside Docker:
+```bash
+docker run --rm merge-arrays
+```
 ---
 
 ## 📂 Project Structure
@@ -146,3 +158,4 @@ reporters: [
 A `report.html` file will appear with:
 - Test result summary
 - Timing information
+
