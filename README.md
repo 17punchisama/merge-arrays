@@ -58,6 +58,8 @@ merge-arrays/
 ├── test/
 │   └── merge.test.ts
 │
+├── .dockerignore
+├── Dockerfile
 ├── jest.config.js
 ├── package.json
 ├── tsconfig.json
@@ -158,4 +160,5 @@ reporters: [
 A `report.html` file will appear with:
 - Test result summary
 - Timing information
+
 
